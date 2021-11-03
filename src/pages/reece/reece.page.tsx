@@ -3,9 +3,9 @@ import { Container, Row, Col, Image } from 'react-bootstrap';
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 
 import './reece.css';
-import ReecesResume from '../../resumes/Resume - Reece Bourgeois.pdf';
-import GitHubLogo from '../../logos/GitHub-Mark-Light-32px.png';
-import LinkedInLogo from '../../logos/In-White-34.png';
+import ReecesResume from '../../files/resumes/Resume - Reece Bourgeois.pdf';
+import GitHubLogo from '../../files/logos/GitHub-Mark-Light-32px.png';
+import LinkedInLogo from '../../files/logos/In-White-34.png';
 
 export const ReecesPage: FC = () => {
   return (
@@ -14,8 +14,9 @@ export const ReecesPage: FC = () => {
       <div className="left-column">
         {/* Content */}
         <div className="intro">
+          {/* <h1 className="reece-b">Reece Bourgeois</h1> */}
           <h1>
-            Hi, I'm <h1 className="reece-b">Reece Bourgeois</h1>
+            Hi, I'm <p className="reece-b m-0">Reece Bourgeois</p>
           </h1>
           <h4 className="full-stack-dev">Full Stack Developer</h4>
           <p className="mad-scientist">Aspiring Mad Scientist</p>
