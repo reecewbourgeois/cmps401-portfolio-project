@@ -2,11 +2,11 @@ import './App.css';
 import { FC } from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import { Switch, Route } from 'react-router-dom';
-import { Home } from './components/home/home.page';
-import { KennethsPage } from './components/kenneth/kenneth.page';
-import { KwentinsPage } from './components/kwentin/kwentin.page';
-import { ReecesPage } from './components/reece/reece.page';
-import { TimothysPage } from './components/timothy/timothy.page';
+import { Home } from './pages/home/home.page';
+import { KennethsPage } from './pages/kenneth/kenneth.page';
+import { KwentinsPage } from './pages/kwentin/kwentin.page';
+import { ReecesPage } from './pages/reece/reece.page';
+import { TimothysPage } from './pages/timothy/timothy.page';
 
 export const App: FC = () => {
   return (
