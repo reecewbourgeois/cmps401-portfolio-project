@@ -15,3 +15,5 @@ This will install all dependencies.
 ### `npm start`
 
 Starts the server on http://localhost:3000
+
+Tadaa!
