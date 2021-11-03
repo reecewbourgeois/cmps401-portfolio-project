@@ -1,0 +1,56 @@
+.page {
+  height: 95vh; /* 95vh because navbar is 5vh */
+}
+
+/*******************************/
+/********* Left Column *********/
+/*******************************/
+
+.left-column {
+  /* Left 30% of view port */
+  width: 30%;
+  height: inherit;
+  float: left;
+  position: fixed;
+
+  background-color: #252526;
+  color: white;
+}
+
+.intro {
+  /* Center the intro text */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+.reece-b {
+  color: #37bcb0;
+}
+
+.mad-scientist {
+  font-style: italic;
+  font-family: 'Tangerine', cursive;
+  font-size: 1.5em;
+  /* color: #98c379; */
+}
+
+.full-stack-dev {
+  color: #d79a4b;
+}
+
+/********************************/
+/********* Right Column *********/
+/********************************/
+
+.right-column {
+  /* Right 70% of view port */
+  width: 70%;
+  height: inherit;
+  float: right;
+
+  background-color: #1e1e1e;
+  color: white;
+}
