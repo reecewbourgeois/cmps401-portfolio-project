@@ -12,7 +12,7 @@ export const App: FC = () => {
   return (
     <div className="App">
       {/* Navbar */}
-      <Navbar bg="dark" variant="dark">
+      <Navbar bg="dark" variant="dark" className="height-of-navbar">
         <Container fluid>
           <Navbar.Brand href="/">The Team</Navbar.Brand>
           <Nav className="me-auto">
