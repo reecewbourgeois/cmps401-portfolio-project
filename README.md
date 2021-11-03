@@ -1,8 +1,10 @@
 # Welcome to Our App
 
-This project was created by Kenneth Cole, Kwentin Ransom, Reece Bourgeois, and Timothy McReynolds in the Fall semester of 2021 at Southeastern Louisiana University.
+This project was created by Kenneth Cole, Kwentin Ransom, Reece Bourgeois, and Timothy McReynolds in the Fall 2021 semester at Southeastern Louisiana University for CMPS 401.
 
 ## To Run Our App
+
+Clone the repository.
 
 In the project directory, run:
 
