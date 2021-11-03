@@ -6,7 +6,7 @@ This project was created by Kenneth Cole, Kwentin Ransom, Reece Bourgeois, and T
 
 Clone the repository.
 
-In the project directory, run:
+Then, in the project directory, run:
 
 ### `npm install`
 
