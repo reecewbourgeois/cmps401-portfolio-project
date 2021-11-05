@@ -7,10 +7,9 @@
 /*******************************/
 
 .left-column {
-  /* Left 30% of view port */
+  /* Act as a sidebar */
   width: 30%;
   height: inherit;
-  float: left;
   position: fixed;
 
   background-color: #252526;
@@ -34,6 +33,16 @@
   color: #d79a4b;
 }
 
+.resume-icon-credit {
+  font-size: 0.8em;
+
+  /* Center text at bottom center of parent component */
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+}
+
 /********************************/
 /********* Right Column *********/
 /********************************/
@@ -44,6 +53,19 @@
   height: inherit;
   float: right;
 
+  /* Only this div is scrollable */
+  overflow: auto;
+
   background-color: #1e1e1e;
+}
+
+.code-list-item {
+  background-color: #4212aa;
+  color: white;
+}
+
+.numbered-list-item{
+  background: transparent;
+  border: none;
   color: white;
 }
