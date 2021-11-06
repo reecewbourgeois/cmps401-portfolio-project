@@ -1,5 +1,5 @@
-import { FC } from 'react';
-import { Container, Row, Col, Image, Button, ListGroup } from 'react-bootstrap';
+import { FC, useState } from 'react';
+import { Image, ListGroup, Modal } from 'react-bootstrap';
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 
 import {
@@ -16,17 +16,24 @@ import GitHubLogo from '../../files/logos/GitHub-Mark-Light-32px.png';
 import LinkedInLogo from '../../files/logos/In-White-34.png';
 import ResumeIcon from '../../files/logos/icons8-resume-40.png';
 import roliThemeJSON from './timeline-theme.json';
+import Robotics2016Team from '../../files/photos/reece/2016 Robotics Team.jpg';
+import Robotics2017Team from '../../files/photos/reece/2017 Robotics Team.jpg';
+import Robotics2018Team from '../../files/photos/reece/2018 Robotics Team.jpg';
 
 const roliTheme = roliThemeJSON;
 
 export const ReecesPage: FC = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <div className="page">
       {/* Left Column */}
       <div className="left-column">
         {/* Content */}
         <div className="intro">
-          {/* <h1 className="reece-b">Reece Bourgeois</h1> */}
           <h1>
             Hi, I'm <p className="reece-b m-0">Reece Bourgeois</p>
           </h1>
@@ -40,7 +47,9 @@ export const ReecesPage: FC = () => {
             <a href="https://www.linkedin.com/in/reecewaynebourgeois/">
               <Image className="ms-3" src={LinkedInLogo} alt="LinkedIn Link" />
             </a>
-            <Image className="ms-3" src={ResumeIcon} alt="Resume Modal" />
+            <button className="image-button" onClick={handleShow}>
+              <Image src={ResumeIcon} alt="Resume Modal" />
+            </button>
           </div>
         </div>
         {/* Credit to the author of the resume icon */}
@@ -59,7 +68,7 @@ export const ReecesPage: FC = () => {
           }}>
           <Events>
             {/* Full Stack Developer Project #2 */}
-            <TextEvent date="2021" text="">
+            <TextEvent date="2021 - Present" text="">
               <h3>Full Stack Developer -- Project #2</h3>
               <hr />
               <ListGroup horizontal className="code-list align-self-center">
@@ -144,9 +153,9 @@ export const ReecesPage: FC = () => {
 
             {/* Robotics Junior Year */}
             <ImageEvent
-              date=""
-              text="###FIRST Robotics Competition x"
-              src=""
+              date="2018"
+              text="###FIRST Power Up Competition"
+              src={Robotics2018Team}
               alt="Team Photo"
               credit="">
               <h4 className="align-self-center">
@@ -163,9 +172,9 @@ export const ReecesPage: FC = () => {
 
             {/* Robotics Sophomore Year */}
             <ImageEvent
-              date=""
-              text="###FIRST Steampunk Competition"
-              src=""
+              date="2017"
+              text="###FIRST Steamworks Competition"
+              src={Robotics2017Team}
               alt="Team Photo"
               credit="">
               <h4 className="align-self-center">
@@ -182,9 +191,9 @@ export const ReecesPage: FC = () => {
 
             {/* Robotics Freshman Year */}
             <ImageEvent
-              date=""
+              date="2016"
               text="###FIRST Stronghold Competition "
-              src=""
+              src={Robotics2016Team}
               alt="Team Photo"
               credit="">
               <h4 className="align-self-center">
@@ -201,9 +210,13 @@ export const ReecesPage: FC = () => {
           </Events>
         </Timeline>
       </div>
-      {/* <Document file={ReecesResume}>
-        <Page pageNumber={1} />
-      </Document> */}
+
+      {/* Resume Modal */}
+      <Modal centered show={show} onHide={handleClose}>
+        <Document file={ReecesResume}>
+          <Page pageNumber={1} />
+        </Document>
+      </Modal>
     </div>
   );
 };
