@@ -6,15 +6,20 @@ import typescriptLogo from '../../files/logos/typescriptlang-icon.svg';
 import reactLogo from '../../files/logos/reactjs-icon.svg';
 import html5Logo from '../../files/logos/html5-icon.svg';
 import css3Logo from '../../files/logos/css-icon.svg';
+import pao from '../../files/photos/home/pao.jfif';
 
 export const Home: FC = () => {
   return (
     <div className="home-page-div">
       <h1>The Paogrammers</h1>
       <h3>Kenneth Cole, Kwentin Ransom, Reece Bourgeois, and Timothy McReynolds</h3>
+      <hr />
 
       {/* Card Container for Languages Used */}
       <Container className="mt-1">
+        <Row>
+          <h2>The Languages Used for the Project</h2>
+        </Row>
         <Row className="justify-content-center">
           {/* TypeScript */}
           <Card className="card-styling p-1 m-1">
@@ -102,6 +107,17 @@ export const Home: FC = () => {
           </Card>
         </Row>
       </Container>
+      <hr />
+      <div className="mb-3">
+        <h1>
+          The <span className="man">Man</span>, The <span className="myth">Myth</span>, The <span className="legend">Legend</span> of the Computer Science Department
+        </h1>
+        <Image src={pao} />
+        <h1>Dr. Kuo-Pao "COBOL is the Best" Yang</h1>
+        <h4>Giving us test anxiety since 2003</h4>
+        <h4>"I have no idea why we moved on from COBOL" - Pao</h4>
+        <h4>"The Paogrammers deserve 100s" - Pao</h4>
+      </div>
     </div>
   );
 };
