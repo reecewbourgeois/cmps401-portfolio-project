@@ -1,0 +1,25 @@
+.top-section {
+  height: 75vh;
+  width: 100vw;
+  background-color: red;
+}
+
+.left {
+  background-color: green;
+}
+
+.right {
+  background-color: blue;
+}
+
+.bottom-section {
+  background-color: red;
+  height: auto;
+  width: 100vw;
+}
+
+.get-rid-of-extra-space-at-bottom {
+  background-color: white;
+  width: 38.75vw;
+  height: 38.75vw;
+}
