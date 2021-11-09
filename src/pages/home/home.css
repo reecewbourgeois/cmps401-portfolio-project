@@ -3,4 +3,19 @@
   background-color: #252526;
   color: white;
   height: 95vh;
+  width: 100vw;
+}
+
+.card-styling {
+  background-color: #333333;
+  width: 16rem;
+}
+
+.link-styling {
+  color: white;
+  text-decoration: none;
+}
+
+.test {
+  width: 100vw;
 }
