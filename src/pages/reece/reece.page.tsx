@@ -212,8 +212,8 @@ export const ReecesPage: FC = () => {
       </div>
 
       {/* Resume Modal */}
-      <Modal centered show={show} onHide={handleClose}>
-        <Document file={ReecesResume}>
+      <Modal show={show} onHide={handleClose}>
+        <Document className="get-rid-of-extra-space-at-bottom" file={ReecesResume}>
           <Page pageNumber={1} />
         </Document>
       </Modal>
