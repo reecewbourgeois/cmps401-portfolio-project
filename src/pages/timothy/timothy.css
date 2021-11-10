@@ -1,21 +1,59 @@
+:root {
+  --color1: #050a30;
+  --color2: #000c66;
+  --color3: #0000ff;
+  --color4: #7ec8e3;
+}
+
 .top-section {
   height: 75vh;
   width: 100vw;
-  background-color: red;
+  /* background-color: red; */
+  background-color: var(--color1);
 }
 
 .left {
-  background-color: green;
+  text-align: center;
+  margin-left: 100px;
+  margin-top: 150px;
+  color: var(--color3);
 }
 
 .right {
   background-color: blue;
 }
 
+.backdrop {
+  position: absolute;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7px;
+  max-width: 46%;
+  height: auto;
+  object-fit: cover;
+}
+
+.hero-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  width: 57%;
+}
+
 .bottom-section {
   background-color: red;
   height: auto;
   width: 100vw;
+  text-align: center;
+}
+
+.project-hero-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
 }
 
 .get-rid-of-extra-space-at-bottom {
