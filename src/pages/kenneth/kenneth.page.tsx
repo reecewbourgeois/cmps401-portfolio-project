@@ -1,12 +1,12 @@
 import { FC } from 'react';
+import Projects from "./components/Projects";
 
 //Test commit - ken
 //
 export const KennethsPage: FC = () => {
   return (
     <div>
-      <h1>Kenneth's Page</h1>
-      <h2>Test</h2>
+      <Projects />
     </div>
   );
 };
