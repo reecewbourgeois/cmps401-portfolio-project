@@ -14,7 +14,7 @@ export const App: FC = () => {
       {/* Navbar */}
       <Navbar bg="dark" variant="dark" className="height-of-navbar">
         <Container fluid>
-          <Navbar.Brand href="/">The Team</Navbar.Brand>
+          <Navbar.Brand href="/">Home</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="/kenneth">Kenneth</Nav.Link>
             <Nav.Link href="/kwentin">Kwentin</Nav.Link>

@@ -1,0 +1,29 @@
+.home-page-div {
+  text-align: center;
+  background-color: #252526;
+  color: white;
+  height: auto;
+  max-width: 100vw;
+}
+
+.card-styling {
+  background-color: #333333;
+  width: 16rem;
+}
+
+.link-styling {
+  color: white;
+  text-decoration: none;
+}
+
+.man {
+  color: #da4f0e
+}
+
+.myth {
+  color: #2c51e8;
+}
+
+.legend {
+  color: #4cd8ff;
+}
