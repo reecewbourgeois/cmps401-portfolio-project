@@ -17,7 +17,7 @@
 }
 
 .man {
-  color: #da4f0e
+  color: #da4f0e;
 }
 
 .myth {
@@ -26,4 +26,36 @@
 
 .legend {
   color: #4cd8ff;
+}
+
+/********************/
+/** Blackjack Game **/
+/********************/
+
+.blackjack-game-box {
+  height: 85vh;
+  width: auto;
+  margin: 1rem;
+  background-color: #333333;
+}
+
+.center-the-button {
+  /* Center the button in the div */
+  position: relative;
+  top: 40%;
+  font-size: 5rem;
+}
+
+.move-to-left {
+  text-align: left !important;
+}
+
+.dealer-side {
+  height: 42.5vh;
+  width: auto;
+}
+
+.player-side {
+  height: 42.5vh;
+  width: auto;
 }

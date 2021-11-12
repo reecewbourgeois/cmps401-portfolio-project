@@ -7,10 +7,12 @@ import reactLogo from '../../files/logos/reactjs-icon.svg';
 import html5Logo from '../../files/logos/html5-icon.svg';
 import css3Logo from '../../files/logos/css-icon.svg';
 import pao from '../../files/photos/home/pao.jfif';
+import { BlackjackGame } from './blackjack-game.component';
 
 export const Home: FC = () => {
   return (
     <div className="home-page-div">
+      {/* Title Section */}
       <h1>The Paogrammers</h1>
       <h3>Kenneth Cole, Kwentin Ransom, Reece Bourgeois, and Timothy McReynolds</h3>
       <hr />
@@ -108,9 +110,12 @@ export const Home: FC = () => {
         </Row>
       </Container>
       <hr />
+
+      {/* Pao's Section */}
       <div className="mb-3">
         <h1>
-          The <span className="man">Man</span>, The <span className="myth">Myth</span>, The <span className="legend">Legend</span> of the Computer Science Department
+          The <span className="man">Man</span>, The <span className="myth">Myth</span>, The{' '}
+          <span className="legend">Legend</span> of the Computer Science Department
         </h1>
         <Image src={pao} />
         <h1>Dr. Kuo-Pao "COBOL is the Best" Yang</h1>
@@ -118,6 +123,11 @@ export const Home: FC = () => {
         <h4>"I have no idea why we moved on from COBOL" - Pao</h4>
         <h4>"The Paogrammers deserve 100s" - Pao</h4>
       </div>
+      <hr />
+
+      {/* Blackjack Game */}
+      <h2>Blackjack Game</h2>
+      <BlackjackGame />
     </div>
   );
 };
