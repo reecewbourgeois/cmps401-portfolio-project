@@ -608,19 +608,27 @@ export const BlackjackGame: FC = () => {
 
   return (
     <div className="blackjack-game-box">
+      {/* If game has started, render the game. Otherwise render a button to start the game */}
       {gameStarted ? (
+        /* If game has started */
         <>
+          {/* If game has started and the game is not over, render the game. Otherwise, display who won and a play again button */}
           {gameOver ? (
+            /* If game is over */
             <div className="center-the-button">
               <h1>{gameOverMessage}</h1>
               <Button onClick={startTheGame}>Play Again</Button>
             </div>
           ) : (
+            /* If game is not over */
             <>
+              {/* Dealer's side */}
               <div className="dealer-side">
                 <h2 className="move-to-left">Dealer Hand Value: {dealersHandValue}</h2>
                 {dealersHand}
               </div>
+
+              {/* Player's side */}
               <div className="player-side">
                 <h2 className="move-to-left">Player Hand Value: {playersHandValue}</h2>
                 {playersHand}
@@ -637,6 +645,7 @@ export const BlackjackGame: FC = () => {
           )}
         </>
       ) : (
+        /* If game has not started */
         <>
           <Button className="center-the-button" onClick={startTheGame}>
             Start Game
