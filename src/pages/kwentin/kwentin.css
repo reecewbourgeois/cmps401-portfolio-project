@@ -1,31 +1,75 @@
-.parent {
+.page {
   height: 95vh;
 }
 
-.left-side {
-  width: 55%;
-  height: 47.5vh;
-  position: fixed;
-  background: red;
-  overflow: auto;
+.right-col {
+  width: 50vw;
+  height: 95vh;
+  background: #f7f7f7;
+  float: right; /* places section on right side of page */
+  overflow-y: auto; /* allows section to be scrolled */
 }
 
-.bottom-left-side {
-  width: 55%;
-  height: 20vh;
-  position: fixed;
-  background: green;
-}
-
-.right-side {
-  width: 55%;
+.left-col {
+  width: 48.9vw;
   height: 95vh;
   position: fixed;
-  background: blue;
 }
 
+.top-left {
+  width: inherit;
+  height: 77.5vh;
+  background: darkcyan;
+  text-align: left;
+}
+
+.bottom-left {
+  width: inherit;
+  height: 17.5vh;
+  background: darkgrey;
+}
+
+/* Resizing personal image in section */
 .kwen-img {
-  width: 100%; /* or any custom size */
-  height: 100%;
+  width: 28vw;
+  height: 67.5vh;
   object-fit: contain;
+  border: none;
+  border-radius: 15px;
+}
+
+/* Resizing images in right (scrollable) section */
+.scroll-img {
+  height: auto;
+  width: auto;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+/* setting font for text */
+
+.kwen-hr {
+  border: none;
+  border-top: 3px double #333;
+  color: #333;
+  overflow: visible;
+  text-align: center;
+  height: 10px;
+}
+
+.kwen-hr:after {
+  background: #fff;
+  content: "§";
+  padding: 0 4px;
+  position: relative;
+  top: -13px;
+}
+
+p {
+  font-family: "EB Garamond";
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 23px;
 }

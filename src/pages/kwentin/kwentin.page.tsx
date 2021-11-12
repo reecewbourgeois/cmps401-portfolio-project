@@ -8,33 +8,45 @@
 import { FC } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./kwentin.css";
-import { Image } from "react-bootstrap";
+import { Image, Row } from "react-bootstrap";
 
 import kwenPortPic from "../../files/photos/kwentin/kwenPortPic.jpeg";
+import LIGOlogo from "../../files/photos/kwentin/LIGOlogo.jpg";
+import geekSquad from "../../files/photos/kwentin/geekSquad.png";
+import verapro from "../../files/photos/kwentin/verapro.png";
+import homeDepot from "../../files/photos/kwentin/homeDepot.png";
+import southeastern from "../../files/photos/kwentin/southeastern.jpg";
 
 export const KwentinsPage: FC = () => {
   return (
-    <div className="parent">
-      <div className="row">
-        <div className="col">
-          <div className="left-side">
-            <div className="top-left-side">
-              {/*<Image className="kwen-img" src={kwenPortPic} />*/}
-              <p>this is a test</p>
-            </div>
+    /* Main Page */
+    <div className="page">
+      {/* Right Section */}
+      <div className="right-col">
+        <br />
+        <p className="font">Work experience</p>
+        <hr className="kwen-hr" />
+        <Image src={LIGOlogo} className="scroll-img" />
+        <br />
+        <Image src={geekSquad} className="scroll-img" />
+        <br />
+        <Image src={verapro} className="scroll-img" />
+        <br />
+        <Image src={homeDepot} className="scroll-img" />
+        <br />
+        <Image src={southeastern} className="scroll-img" />
+      </div>
 
-            <div className="bottom-left-side">
-              <p>this is a test</p>
-            </div>
-          </div>
+      {/* Left Section */}
+      <div className="left-col">
+        <div className="top-left">
+          <p>test</p>
+          <Image src={kwenPortPic} className="kwen-img" />
         </div>
-
-        <div className="col">
-          <div className="right-side">
-            <p>this is a test</p>
-          </div>
+        <div className="bottom-left">
+          <p>test</p>
         </div>
       </div>
-    </div> //parent div
+    </div> //main: page div
   ); //return
 }; //KwentinsPage
