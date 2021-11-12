@@ -7,6 +7,7 @@ import reactLogo from '../../files/logos/reactjs-icon.svg';
 import html5Logo from '../../files/logos/html5-icon.svg';
 import css3Logo from '../../files/logos/css-icon.svg';
 import pao from '../../files/photos/home/pao.jfif';
+import { BlackjackGame } from './blackjack-game.component';
 
 export const Home: FC = () => {
   return (
@@ -125,6 +126,8 @@ export const Home: FC = () => {
       <hr />
 
       {/* Blackjack Game */}
+      <h2>Blackjack Game</h2>
+      <BlackjackGame />
     </div>
   );
 };
