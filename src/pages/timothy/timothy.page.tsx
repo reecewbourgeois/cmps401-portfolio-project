@@ -16,6 +16,8 @@ import IkeaRender2 from "../../files/photos/timothy/IkeaRender2.png";
 import HalloweenRender from "../../files/photos/timothy/HalloweenRender.png";
 
 import Backdrop from "../../files/photos/timothy/Transparent_Backdrop.png"
+// import MSM from "../../files/photos/timothy/TempWebsiteImage.png"
+import MSM from "../../files/photos/timothy/MSM_Slide.jpg"
 
 import HexapodHeroPic from "../../files/photos/timothy/HexapodHeroPic.jpg";
 export const TimothysPage: FC = () => {
@@ -29,11 +31,11 @@ export const TimothysPage: FC = () => {
   const handleShowPictures = () => setShowPictures(true);
 
   return (
-    <div className="text-white">       
+    <div className="page">       
       {/* Top 2 columns */}       
       <Row className="top-section">         
         <Col className="left">          
-          <h1>Timothy Ramsey McReynolds</h1>  
+          <h1>Timothy McReynolds</h1>  
           <p>I am a computer science major at Southeastern Louisiana University.
             I have written programs for LED lights, animatronics, robotics, and web applications.
             My hobbies include programming and making 3D models for 3D printing and rendering. 
@@ -54,44 +56,48 @@ export const TimothysPage: FC = () => {
           </div>
         </Col>       
         <Col className="right">      
-          <img src={Backdrop} className="backdrop"/>
-          {/* Image by rawpixel.com */}
           <img src={HeroImage} alt="Picture of Tim" className="hero-image"/>
         </Col>    
       </Row>     
       {/* Bottom Row */}      
       <Row className="bottom-section">  
-        <h1>My Projects</h1>  
-        <div className="top-project">         
+        <h1>My Favorite Projects</h1>  
+        <div className="left-project">         
           <h2>Bluetooth Controlled Hexapod</h2>
           <img className="project-hero-image" src={HexapodHeroPic} alt="" />
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam cupiditate eaque corporis et dolorum quaerat doloremque porro ipsa tempora placeat!</p>
+          {/* <p>I repurposed a robotic hexapod for my High School as my senior project.
+             I reprogrammed the leg movement and kinematics as well as the controls for a PS2 controller. 
+             I would bring the project to many different community outreach events, including multiple times at the Smoothie King Center in New Orleans. 
+             I even got to show it off to New Orleans Pelicans player Frank Jackson for a Smoothie King Center commercial. 
+             Eventually I got tired of using the PS2 controller and reprogrammed the hexapod to be controlled through Bluetooth controls on an iPhone for easier use.
+             </p> */}
         </div> 
-        <div className="middle-project">
-          <h2>Property Management Website for Matilda Stream Management Inc.</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptatibus voluptatum maiores odio praesentium vitae, molestiae perferendis nulla possimus distinctio.</p>
-        </div>
-        <div className="bottom-project">
-          <h2>Right Project</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eligendi excepturi optio accusantium nulla esse iure sequi cum dignissimos ducimus.</p>
+        <div className="right-project">
+          <h2>Property Management Website</h2>
+          <img src={MSM} className="project-hero-image" alt="" />
+          {/* <p>I was the team leader as well as a backend developer for my Software Engineering class project. 
+            The project was a property management website made using .NET and REACT. 
+            The website was able to let the company Matilda Stream Management Inc. manage their owned properties as well as give ratings to different attributes of the property based on how damaged they were. 
+            Additionally, the website was able to track when the properties were added/edited and which user edited the properties.
+            </p> */}
         </div>
       </Row> 
 
-    {/* Resume Modal */}
-    <Modal show={showResume} onHide={handleCloseResume}>
-      <Document className="get-rid-of-extra-space-at-bottom" file={TimResume}>
-        <Page pageNumber={1} />
-      </Document>
-    </Modal>
+      {/* Resume Modal */}
+      <Modal show={showResume} onHide={handleCloseResume}>
+        <Document className="get-rid-of-extra-space-at-bottom" file={TimResume}>
+          <Page pageNumber={1} />
+        </Document>
+      </Modal>
 
-    {/* 3D Art Modal */}
-    <Modal show={showPictures} onHide={handleClosePictures}>
-      <img src={CafeRender} alt="" />
-      <img src={ChristmasRender} alt="" />
-      <img src={IkeaRender1} alt="" />
-      <img src={IkeaRender2} alt="" />
-      <img src={HalloweenRender} alt="" />
-    </Modal>
+      {/* 3D Art Modal */}
+      <Modal show={showPictures} onHide={handleClosePictures}>
+        <img src={CafeRender} alt="" />
+        <img src={ChristmasRender} alt="" />
+        <img src={IkeaRender1} alt="" />
+        <img src={IkeaRender2} alt="" />
+        <img src={HalloweenRender} alt="" />
+      </Modal>
     </div>
 
   );

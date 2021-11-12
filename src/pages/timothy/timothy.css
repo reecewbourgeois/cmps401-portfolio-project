@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+
 :root {
   --color1: #050a30;
   --color2: #000c66;
@@ -5,22 +7,34 @@
   --color4: #7ec8e3;
 }
 
+.page {
+  font-family: Libre;
+}
+
 .top-section {
   height: 75vh;
   width: 100vw;
-  /* background-color: red; */
-  background-color: var(--color1);
+  /* background-color: var(--color1); */
+  background-image: linear-gradient(to top left, var(--color1), var(--color2));
+}
+
+.top-section h1 {
+  font-size: 55px;
+}
+
+.top-section p {
+  font-size: 20px;
 }
 
 .left {
   text-align: center;
   margin-left: 100px;
   margin-top: 150px;
-  color: var(--color3);
+  /* Text color */
+  color: var(--color4);
 }
 
 .right {
-  background-color: blue;
 }
 
 .backdrop {
@@ -40,20 +54,43 @@
   margin-right: auto;
   margin-top: 25px;
   width: 57%;
+  border-radius: 25%;
 }
 
 .bottom-section {
-  background-color: red;
+  /* background-color: var(--color2); */
+  background-image: linear-gradient(to bottom right, var(--color1), purple);
   height: auto;
   width: 100vw;
   text-align: center;
+  color: var(--color4);
+}
+
+.bottom-section h1 {
+  margin-top: 50px;
+  text-decoration: underline;
+}
+
+.bottom-section h2 {
+  /* margin-top: 25px; */
+}
+
+.left-project {
+  width: 50%;
+}
+
+.right-project {
+  width: 50%;
 }
 
 .project-hero-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 600px;
+  height: 80%;
+  width: 50%;
+  border-radius: 10%;
+  border: 5px solid var(--color3);
 }
 
 .get-rid-of-extra-space-at-bottom {
