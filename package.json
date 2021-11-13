@@ -7,6 +7,7 @@
     "@emotion/styled": "^11.3.0",
     "@heroicons/react": "^1.0.5",
     "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
     "@merc/react-timeline": "^0.1.42",
     "@mui/material": "^5.1.0",
     "@types/jest": "^26.0.24",

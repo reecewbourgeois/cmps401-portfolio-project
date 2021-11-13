@@ -1,17 +1,17 @@
 .page {
   height: 95vh;
+  background: #f7f7f7;
 }
 
 .right-col {
-  width: 50vw;
+  width: 70vw;
   height: 95vh;
-  background: #f7f7f7;
   float: right; /* places section on right side of page */
   overflow-y: auto; /* allows section to be scrolled */
 }
 
 .left-col {
-  width: 48.9vw;
+  width: auto;
   height: 95vh;
   position: fixed;
 }
@@ -19,19 +19,17 @@
 .top-left {
   width: inherit;
   height: 77.5vh;
-  background: darkcyan;
   text-align: left;
 }
 
 .bottom-left {
   width: inherit;
   height: 17.5vh;
-  background: darkgrey;
 }
 
 /* Resizing personal image in section */
 .kwen-img {
-  width: 28vw;
+  width: auto;
   height: 67.5vh;
   object-fit: contain;
   border: none;
@@ -44,6 +42,7 @@
   width: auto;
   max-width: 100px;
   max-height: 100px;
+  border-radius: 10px;
 }
 
 /* setting font for text */
