@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 
 :root {
   --color1: #050a30;
@@ -126,7 +126,7 @@
 
 .timothys-get-rid-of-extra-space-at-bottom {
   background-color: white;
-  width: 38.75vw ;
+  width: 38.75vw;
   height: 38.75vw;
 }
 
@@ -142,4 +142,12 @@
   font-size: 0.8em;
   text-align: left;
   color: white;
+}
+
+.timothys-art-page {
+  font-family: Libre;
+  text-align: center;
+  background-image: linear-gradient(to top left, var(--color1), var(--color2));
+  color: var(--color4);
+  margin-bottom: 0;
 }

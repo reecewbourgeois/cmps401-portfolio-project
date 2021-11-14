@@ -109,11 +109,17 @@ export const TimothysPage: FC = () => {
 
       {/* 3D Art Modal */}
       <Modal show={showPictures} onHide={handleClosePictures}>
-        <img src={CafeRender} alt="#d render of donut and coffee cup" />
-        <img src={ChristmasRender} alt="3D render of house during Christmas" />
-        <img src={IkeaRender1} alt="3D render of Ikea chair" />
-        <img src={IkeaRender2} alt="3D render of Ikea chairs and table" />
-        <img src={HalloweenRender} alt="3D render of haunted house" />
+          <h1 className="timothys-art-page">My 3D Art</h1>
+          <img src={CafeRender} alt="3d render of donut and coffee cup" />
+          <p className="timothys-art-page">Beginner Donut Tutorial</p>
+          <img src={ChristmasRender} alt="3D render of house during Christmas" />
+          <p className="timothys-art-page">Christmas 2020 Render</p>
+          <img src={IkeaRender1} alt="3D render of Ikea chairs and table" />
+          <p className="timothys-art-page">Product Render of IKEA GAMLARED Table and STEFAN Chairs</p>
+          <img src={IkeaRender2} alt="3D render of Ikea chair" />
+          <p className="timothys-art-page">Product Render of IKEA ÄPPLARÖ Reclining Chair</p>
+          <img src={HalloweenRender} alt="3D render of haunted house" />
+          <p className="timothys-art-page">October 2021 Render</p>
       </Modal>
 
       {/* Hexapod Project Modal */}
