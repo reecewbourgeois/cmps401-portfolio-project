@@ -24,7 +24,7 @@ export const Home: FC = () => {
         </Row>
         <Row className="justify-content-center">
           {/* TypeScript */}
-          <Card className="card-styling p-1 m-1">
+          <Card className="home-card-styling p-1 m-1">
             <Image src={typescriptLogo} />
             <Card.Body>
               <Card.Title>TypeScript</Card.Title>
@@ -34,7 +34,7 @@ export const Home: FC = () => {
               </Card.Text>
               <Button>
                 <a
-                  className="link-styling"
+                  className="home-link-styling"
                   href="https://www.typescriptlang.org/"
                   target="_blank"
                   rel="noopener noreferrer">
@@ -45,7 +45,7 @@ export const Home: FC = () => {
           </Card>
 
           {/* React */}
-          <Card className="card-styling p-1 m-1">
+          <Card className="home-card-styling p-1 m-1">
             <Image src={reactLogo} />
             <Card.Body>
               <Card.Title>React</Card.Title>
@@ -56,7 +56,7 @@ export const Home: FC = () => {
               </Card.Text>
               <Button>
                 <a
-                  className="link-styling"
+                  className="home-link-styling"
                   href="https://reactjs.org/"
                   target="_blank"
                   rel="noopener noreferrer">
@@ -67,7 +67,7 @@ export const Home: FC = () => {
           </Card>
 
           {/* HTML5 */}
-          <Card className="card-styling p-1 m-1">
+          <Card className="home-card-styling p-1 m-1">
             <Image src={html5Logo} />
             <Card.Body>
               <Card.Title>HTML5</Card.Title>
@@ -77,7 +77,7 @@ export const Home: FC = () => {
               </Card.Text>
               <Button>
                 <a
-                  className="link-styling"
+                  className="home-link-styling"
                   href="https://www.w3.org/TR/html5/"
                   target="_blank"
                   rel="noopener noreferrer">
@@ -88,7 +88,7 @@ export const Home: FC = () => {
           </Card>
 
           {/* CSS3 */}
-          <Card className="card-styling p-1 m-1">
+          <Card className="home-card-styling p-1 m-1">
             <Image src={css3Logo} />
             <Card.Body>
               <Card.Title>CSS3</Card.Title>
@@ -98,7 +98,7 @@ export const Home: FC = () => {
               </Card.Text>
               <Button>
                 <a
-                  className="link-styling"
+                  className="home-link-styling"
                   href="https://www.w3.org/Style/CSS/"
                   target="_blank"
                   rel="noopener noreferrer">
@@ -114,8 +114,8 @@ export const Home: FC = () => {
       {/* Pao's Section */}
       <div className="mb-3">
         <h1>
-          The <span className="man">Man</span>, The <span className="myth">Myth</span>, The{' '}
-          <span className="legend">Legend</span> of the Computer Science Department
+          The <span className="home-man">Man</span>, The <span className="home-myth">Myth</span>, The{' '}
+          <span className="home-legend">Legend</span> of the Computer Science Department
         </h1>
         <Image src={pao} />
         <h1>Dr. Kuo-Pao "COBOL is the Best" Yang</h1>

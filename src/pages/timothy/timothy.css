@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
 :root {
   --color1: #050a30;
@@ -7,42 +7,52 @@
   --color4: #7ec8e3;
 }
 
-.page {
+.timothys-page {
   font-family: Libre;
 }
 
-.top-section {
+.timothys-top-section {
   height: 80vh;
   width: 100vw;
   background-image: linear-gradient(to top left, var(--color1), var(--color2));
 }
 
-.top-section h1 {
+.timothys-top-section h1 {
   font-size: 55px;
 }
 
-.Major {
+.timothys-Major {
   font-size: 30px;
 }
 
-.Minor {
+.timothys-Minor {
   font-size: 20px;
   display: inline;
   padding-right: 40px;
 }
 
-.socials {
+.timothys-socials {
   padding-top: 10px;
 }
 
-.left {
+.timothys-image-button {
+  /* Remove background */
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  margin-left: 0.5rem;
+}
+
+.timothys-left {
   text-align: left;
   padding-left: 120px;
   padding-top: 150px;
   color: var(--color4);
 }
 
-.hero-image {
+.timothys-hero-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -53,7 +63,7 @@
   border-radius: 50%;
 }
 
-.middle-section {
+.timothys-middle-section {
   background-image: linear-gradient(to bottom right, var(--color1), purple);
   height: auto;
   width: 100vw;
@@ -61,25 +71,25 @@
   color: var(--color4);
 }
 
-.middle-section h1 {
+.timothys-middle-section h1 {
   margin-top: 50px;
   padding-bottom: 20px;
   text-decoration: underline;
 }
 
-.middle-section img {
+.timothys-middle-section img {
   cursor: pointer;
 }
 
-.left-project {
+.timothys-left-project {
   width: 50%;
 }
 
-.right-project {
+.timothys-right-project {
   width: 50%;
 }
 
-.project-hero-image {
+.timothys-project-hero-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -89,38 +99,38 @@
   border: 5px solid var(--color3);
 }
 
-.project-hero-image:hover {
+.timothys-project-hero-image:hover {
   transition: 0.25s;
   filter: brightness(80%);
 }
 
-.bottom-section {
+.timothys-bottom-section {
   width: 100vw;
   background-image: linear-gradient(to top right, var(--color1), var(--color2));
   color: var(--color4);
   text-align: center;
 }
 
-.bottom-section h1 {
+.timothys-bottom-section h1 {
   margin-top: 50px;
   /* font-size: 60px; */
   text-decoration: underline;
 }
 
-.bottom-section p {
+.timothys-bottom-section p {
   font-size: 30px;
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 20px;
 }
 
-.get-rid-of-extra-space-at-bottom {
+.timothys-get-rid-of-extra-space-at-bottom {
   background-color: white;
-  width: 38.75vw;
+  width: 38.75vw ;
   height: 38.75vw;
 }
 
-.description {
+.timothys-description {
   font-family: Libre;
   font-size: 20px;
   background-image: linear-gradient(to top left, var(--color1), var(--color2));
@@ -128,7 +138,7 @@
   text-align: center;
 }
 
-.icon-credit {
+.timothys-icon-credit {
   font-size: 0.8em;
   text-align: left;
   color: white;

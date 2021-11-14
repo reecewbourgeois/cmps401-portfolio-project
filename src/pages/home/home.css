@@ -6,25 +6,25 @@
   max-width: 100vw;
 }
 
-.card-styling {
-  background-color: #333333;
-  width: 16rem;
+.home-card-styling {
+  background-color: #333333 !important;
+  width: 16rem !important;
 }
 
-.link-styling {
+.home-link-styling {
   color: white;
   text-decoration: none;
 }
 
-.man {
+.home-man {
   color: #da4f0e;
 }
 
-.myth {
+.home-myth {
   color: #2c51e8;
 }
 
-.legend {
+.home-legend {
   color: #4cd8ff;
 }
 
@@ -39,23 +39,23 @@
   background-color: #333333;
 }
 
-.center-the-button {
+.blackjack-center-the-button {
   /* Center the button in the div */
   position: relative;
   top: 40%;
-  font-size: 5rem;
+  font-size: 5rem !important;
 }
 
-.move-to-left {
+.blackjack-move-to-left {
   text-align: left !important;
 }
 
-.dealer-side {
+.blackjack-dealer-side {
   height: 42.5vh;
   width: auto;
 }
 
-.player-side {
+.blackjack-player-side {
   height: 42.5vh;
   width: auto;
 }

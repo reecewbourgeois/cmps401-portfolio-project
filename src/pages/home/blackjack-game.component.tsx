@@ -615,7 +615,7 @@ export const BlackjackGame: FC = () => {
           {/* If game has started and the game is not over, render the game. Otherwise, display who won and a play again button */}
           {gameOver ? (
             /* If game is over */
-            <div className="center-the-button">
+            <div className="blackjack-center-the-button">
               <h1>{gameOverMessage}</h1>
               <Button onClick={startTheGame}>Play Again</Button>
             </div>
@@ -623,14 +623,14 @@ export const BlackjackGame: FC = () => {
             /* If game is not over */
             <>
               {/* Dealer's side */}
-              <div className="dealer-side">
-                <h2 className="move-to-left">Dealer Hand Value: {dealersHandValue}</h2>
+              <div className="blackjack-dealer-side">
+                <h2 className="blackjack-move-to-left">Dealer Hand Value: {dealersHandValue}</h2>
                 {dealersHand}
               </div>
 
               {/* Player's side */}
-              <div className="player-side">
-                <h2 className="move-to-left">Player Hand Value: {playersHandValue}</h2>
+              <div className="blackjack-player-side">
+                <h2 className="blackjack-move-to-left">Player Hand Value: {playersHandValue}</h2>
                 {playersHand}
                 <br />
                 <div className="mt-2">
@@ -647,7 +647,7 @@ export const BlackjackGame: FC = () => {
       ) : (
         /* If game has not started */
         <>
-          <Button className="center-the-button" onClick={startTheGame}>
+          <Button className="blackjack-center-the-button" onClick={startTheGame}>
             Start Game
           </Button>
         </>

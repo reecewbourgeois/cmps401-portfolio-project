@@ -1,7 +1,7 @@
-import { FC } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./kwentin.css";
-import { Image, Row } from "react-bootstrap";
+import { FC } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './kwentin.css';
+import { Image, Row } from 'react-bootstrap';
 
 /* Tutorial */
 import {
@@ -15,47 +15,42 @@ import {
   Grid,
   Toolbar,
   Container,
-} from "@material-ui/core";
-import useStyles from "./kwentin-styles";
+} from '@material-ui/core';
+import useStyles from './kwentin-styles';
 
 /* Icons */
-import GitHubIcon from "@material-ui/icons/GitHub";
-import LinkedIn from "@material-ui/icons/LinkedIn";
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedIn from '@material-ui/icons/LinkedIn';
 
 /* Photos */
-import kwenPortPic from "../../files/photos/kwentin/kwenPortPic.jpeg";
-import kwenPortPicCropped from "../../files/photos/kwentin/kwenPortPicCropped.jpeg";
-import LIGOlogo from "../../files/photos/kwentin/LIGOlogo.jpg";
-import geekSquad from "../../files/photos/kwentin/geekSquad.png";
-import verapro from "../../files/photos/kwentin/verapro.png";
-import homeDepot from "../../files/photos/kwentin/homeDepot.png";
-import southeastern from "../../files/photos/kwentin/southeastern.jpg";
-import { ClassNames } from "@emotion/react";
+import kwenPortPic from '../../files/photos/kwentin/kwenPortPic.jpeg';
+import kwenPortPicCropped from '../../files/photos/kwentin/kwenPortPicCropped.jpeg';
+import LIGOlogo from '../../files/photos/kwentin/LIGOlogo.jpg';
+import geekSquad from '../../files/photos/kwentin/geekSquad.png';
+import verapro from '../../files/photos/kwentin/verapro.png';
+import homeDepot from '../../files/photos/kwentin/homeDepot.png';
+import southeastern from '../../files/photos/kwentin/southeastern.jpg';
+import { ClassNames } from '@emotion/react';
 
 export const KwentinsPage: FC = () => {
   const classes = useStyles();
   const cards = [1, 2, 3, 4, 5, 6, 7, 8];
   return (
     /* Main Page */
-    <div className="page">
+    <div className="kwentins-page">
       {/* Right Section */}
-      <div className="right-col">
+      <div className="kwentins-right-col">
         <>
           <CssBaseline />
           <div className={classes.container}>
-            <Container maxWidth="sm" style={{ marginTop: "25px" }}>
-              <Typography
-                variant="h4"
-                align="center"
-                color="textPrimary"
-                gutterBottom
-              >
+            <Container maxWidth="sm" style={{ marginTop: '25px' }}>
+              <Typography variant="h4" align="center" color="textPrimary" gutterBottom>
                 Work Experience
               </Typography>
               <hr />
               <Typography variant="h5" align="left">
-                Hello everyone. This is a photo album and I am truing to make a
-                very long sentence to display the functionality of this.
+                Hello everyone. This is a photo album and I am truing to make a very long sentence
+                to display the functionality of this.
               </Typography>
               <Grid container spacing={2} justify="center"></Grid>
             </Container>
@@ -73,9 +68,7 @@ export const KwentinsPage: FC = () => {
                         <Typography gutterBottom variant="h5">
                           Heading
                         </Typography>
-                        <Typography>
-                          This is a media card. With some text in it.
-                        </Typography>
+                        <Typography>This is a media card. With some text in it.</Typography>
                       </CardContent>
                       <CardActions>
                         <Button size="small" color="primary">
@@ -94,11 +87,7 @@ export const KwentinsPage: FC = () => {
               <Typography variant="h6" align="center" gutterBottom>
                 Footer
               </Typography>
-              <Typography
-                variant="subtitle1"
-                align="center"
-                color="textSecondary"
-              >
+              <Typography variant="subtitle1" align="center" color="textSecondary">
                 Something here to give the footer a purpose.
               </Typography>
             </footer>
@@ -106,26 +95,25 @@ export const KwentinsPage: FC = () => {
         </>
 
         <br />
-        <p className="font">Work experience</p>
+        <p className="kwentins-font">Work experience</p>
         <hr className="kwen-hr" />
-        <Image src={LIGOlogo} className="scroll-img" />
+        <Image src={LIGOlogo} className="kwentins-scroll-img" />
         <br />
-        <Image src={geekSquad} className="scroll-img" />
+        <Image src={geekSquad} className="kwentins-scroll-img" />
         <br />
-        <Image src={verapro} className="scroll-img" />
+        <Image src={verapro} className="kwentins-scroll-img" />
         <br />
-        <Image src={homeDepot} className="scroll-img" />
+        <Image src={homeDepot} className="kwentins-scroll-img" />
         <br />
-        <Image src={southeastern} className="scroll-img" />
+        <Image src={southeastern} className="kwentins-scroll-img" />
       </div>
 
       {/* Left Section */}
-      <div className="left-col">
-        <div className="top-left">
+      <div className="kwentins-left-col">
+        <div className="kwentins-top-left">
           <p>
             <Image src={kwenPortPicCropped} className="kwen-img" />
-            Hey, I am Kwentin Ransom. A computer science major with a scientific
-            concentration.
+            Hey, I am Kwentin Ransom. A computer science major with a scientific concentration.
           </p>
         </div>
         <div className="mt-3">
@@ -134,17 +122,14 @@ export const KwentinsPage: FC = () => {
               <GitHubIcon color="primary" fontSize="large" />
             </a>
           </span>
-          <a
-            href="https://www.linkedin.com/in/kwentin-ransom-b07b931a9/"
-            target="_blank"
-          >
+          <a href="https://www.linkedin.com/in/kwentin-ransom-b07b931a9/" target="_blank">
             <LinkedIn fontSize="large" />
           </a>
         </div>
-        <div className="bottom-left">
+        <div className="kwentins-bottom-left">
           <p>test</p>
         </div>
       </div>
-    </div> //main: page div
+    </div> //main: kwentins-page div
   ); //return
 }; //KwentinsPage

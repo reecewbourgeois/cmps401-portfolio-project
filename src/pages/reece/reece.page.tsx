@@ -29,16 +29,16 @@ export const ReecesPage: FC = () => {
   const handleShow = () => setShow(true);
 
   return (
-    <div className="page">
+    <div className="reeces-page">
       {/* Left Column */}
-      <div className="left-column">
+      <div className="reeces-left-column">
         {/* Content */}
-        <div className="intro">
+        <div className="reeces-intro">
           <h1>
             Hi, I'm <p className="reece-b m-0">Reece Bourgeois</p>
           </h1>
           <hr />
-          <h3 className="full-stack-dev">Full Stack Developer</h3>
+          <h3 className="reeces-full-stack-dev">Full Stack Developer</h3>
           <h5>Computer Science Major</h5>
           <div className="mt-3">
             <a href="https://github.com/Rupersman">
@@ -47,20 +47,20 @@ export const ReecesPage: FC = () => {
             <a href="https://www.linkedin.com/in/reecewaynebourgeois/">
               <Image className="ms-3" src={LinkedInLogo} alt="LinkedIn Link" />
             </a>
-            <button className="image-button" onClick={handleShow}>
+            <button className="reeces-image-button" onClick={handleShow}>
               <Image src={ResumeIcon} alt="Resume Modal" />
             </button>
           </div>
         </div>
         {/* Credit to the author of the resume icon */}
-        <div className="resume-icon-credit">
+        <div className="reeces-resume-icon-credit">
           <a href="https://icons8.com/icon/61016/resume">Resume</a> icon by{' '}
           <a href="https://icons8.com">Icons8</a>
         </div>
       </div>
 
       {/* Right Column */}
-      <div className="right-column">
+      <div className="reeces-right-column">
         <Timeline
           theme={roliTheme}
           opts={{
@@ -71,12 +71,12 @@ export const ReecesPage: FC = () => {
             <TextEvent date="2021 - Present" text="">
               <h3>Full Stack Developer -- Project #2</h3>
               <hr />
-              <ListGroup horizontal className="code-list align-self-center">
-                <ListGroup.Item className="code-list-item">Node.js</ListGroup.Item>
-                <ListGroup.Item className="code-list-item">Express.js</ListGroup.Item>
-                <ListGroup.Item className="code-list-item">TypeScript</ListGroup.Item>
-                <ListGroup.Item className="code-list-item">React</ListGroup.Item>
-                <ListGroup.Item className="code-list-item">SQL</ListGroup.Item>
+              <ListGroup horizontal className="align-self-center">
+                <ListGroup.Item className="reeces-code-list-item">Node.js</ListGroup.Item>
+                <ListGroup.Item className="reeces-code-list-item">Express.js</ListGroup.Item>
+                <ListGroup.Item className="reeces-code-list-item">TypeScript</ListGroup.Item>
+                <ListGroup.Item className="reeces-code-list-item">React</ListGroup.Item>
+                <ListGroup.Item className="reeces-code-list-item">SQL</ListGroup.Item>
               </ListGroup>
               <h6 className="mt-2 align-self-center">
                 A web app for a client to track project cost estimation and payroll.
@@ -88,10 +88,10 @@ export const ReecesPage: FC = () => {
               <h3>Full Stack Developer -- Project #1</h3>
               <hr />
               <ListGroup horizontal className="align-self-center">
-                <ListGroup.Item className="code-list-item">Node.js</ListGroup.Item>
-                <ListGroup.Item className="code-list-item">Express.js</ListGroup.Item>
-                <ListGroup.Item className="code-list-item">React</ListGroup.Item>
-                <ListGroup.Item className="code-list-item">MongoDB</ListGroup.Item>
+                <ListGroup.Item className="reeces-code-list-item">Node.js</ListGroup.Item>
+                <ListGroup.Item className="reeces-code-list-item">Express.js</ListGroup.Item>
+                <ListGroup.Item className="reeces-code-list-item">React</ListGroup.Item>
+                <ListGroup.Item className="reeces-code-list-item">MongoDB</ListGroup.Item>
               </ListGroup>
               <h6 className="mt-2 align-self-center">
                 An internal web app for inventory management and repair tracking with a ticketing
@@ -165,7 +165,7 @@ export const ReecesPage: FC = () => {
                 Team 4053
               </h4>
               <ListGroup horizontal className="align-self-center">
-                <ListGroup.Item className="code-list-item">Java</ListGroup.Item>
+                <ListGroup.Item className="reeces-code-list-item">Java</ListGroup.Item>
               </ListGroup>
               <h5 className="align-self-center">Captain, Programmer</h5>
             </ImageEvent>
@@ -184,7 +184,7 @@ export const ReecesPage: FC = () => {
                 Team 4053
               </h4>
               <ListGroup horizontal className="align-self-center">
-                <ListGroup.Item className="code-list-item">Java</ListGroup.Item>
+                <ListGroup.Item className="reeces-code-list-item">Java</ListGroup.Item>
               </ListGroup>
               <h5 className="align-self-center">Co-Captain, Programmer</h5>
             </ImageEvent>
@@ -203,7 +203,7 @@ export const ReecesPage: FC = () => {
                 Team 4053
               </h4>
               <ListGroup horizontal className="align-self-center">
-                <ListGroup.Item className="code-list-item">Java</ListGroup.Item>
+                <ListGroup.Item className="reeces-code-list-item">Java</ListGroup.Item>
               </ListGroup>
               <h5 className="align-self-center">Programmer</h5>
             </ImageEvent>
@@ -213,7 +213,7 @@ export const ReecesPage: FC = () => {
 
       {/* Resume Modal */}
       <Modal show={show} onHide={handleClose}>
-        <Document className="get-rid-of-extra-space-at-bottom" file={ReecesResume}>
+        <Document className="reeces-get-rid-of-extra-space-at-bottom" file={ReecesResume}>
           <Page pageNumber={1} />
         </Document>
       </Modal>

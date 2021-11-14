@@ -1,28 +1,28 @@
-.page {
+.kwentins-page {
   height: 95vh;
   background: #f7f7f7;
 }
 
-.right-col {
+.kwentins-right-col {
   width: 60vw;
   height: 95vh;
-  float: right; /* places section on right side of page */
+  float: right; /* places section on right side of kwentins-page */
   overflow-y: auto; /* allows section to be scrolled */
 }
 
-.left-col {
+.kwentins-left-col {
   width: auto;
   height: 95vh;
   position: fixed;
 }
 
-.top-left {
+.kwentins-top-left {
   width: inherit;
   height: 77.5vh;
   text-align: left;
 }
 
-.bottom-left {
+.kwentins-bottom-left {
   width: inherit;
   height: 17.5vh;
 }
@@ -39,7 +39,7 @@
 }
 
 /* Resizing images in right (scrollable) section */
-.scroll-img {
+.kwentins-scroll-img {
   height: auto;
   width: auto;
   max-width: 100px;
@@ -66,7 +66,7 @@
   top: -13px;
 }
 
-p {
+.kwentins-font {
   font-family: "EB Garamond";
   font-size: 14px;
   font-style: normal;
