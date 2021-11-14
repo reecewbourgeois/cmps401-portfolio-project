@@ -122,8 +122,11 @@ export const KwentinsPage: FC = () => {
       {/* Left Section */}
       <div className="left-col">
         <div className="top-left">
-          <p>test</p>
-          <Image src={kwenPortPicCropped} className="kwen-img" />
+          <p>
+            <Image src={kwenPortPicCropped} className="kwen-img" />
+            Hey, I am Kwentin Ransom. A computer science major with a scientific
+            concentration.
+          </p>
         </div>
         <div className="mt-3">
           <span title="GitHub">

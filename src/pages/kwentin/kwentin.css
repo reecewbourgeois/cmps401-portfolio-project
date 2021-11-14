@@ -4,7 +4,7 @@
 }
 
 .right-col {
-  width: 70vw;
+  width: 60vw;
   height: 95vh;
   float: right; /* places section on right side of page */
   overflow-y: auto; /* allows section to be scrolled */
@@ -32,8 +32,10 @@
   width: auto;
   height: 67.5vh;
   object-fit: contain;
-  border: none;
   border-radius: 15px;
+  margin-left: 20px;
+  margin-top: 20px;
+  float: left;
 }
 
 /* Resizing images in right (scrollable) section */
