@@ -3,9 +3,11 @@ import { Grid, Card, CardMedia, CardContent, Typography } from "@mui/material"
 import { CodeIcon } from "@heroicons/react/solid";
 
 import { projects } from "../data";
-import project2 from "../../../files/photos/kenneth/project2.jpg";
+import project2 from "../../../files/photos/kenneth/project1.jpg";
+import project1 from "../../../files/photos/kenneth/project1.jpg";
 
 export const Projects: FC = () => {
+    const projImages = [project1, project2];
     return (
         <section id="projects" className="kennethSection">
             <div>
@@ -30,19 +32,18 @@ export const Projects: FC = () => {
                                                 <CardMedia
                                                     component="img"
                                                     height="140"
-                                                    image={project2}
-                                                    alt="green iguana"
+                                                    image={projImages[project.image]}
+                                                    alt="Project"
                                                 />
                                                 <CardContent>
                                                     <Typography gutterBottom variant="h5" component="div">
-                                                        Full-Stack
+                                                        {project.title}
                                                     </Typography>
                                                     <Typography variant="body2" color="text.secondary">
-                                                        Full-Stack React and .NET app for Property Managers
+                                                        {project.description}
                                                     </Typography>
                                                 </CardContent>
                                             </Card>
-
                                         </a>
                                     </div>
                                 ))}

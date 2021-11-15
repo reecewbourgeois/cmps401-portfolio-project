@@ -2,7 +2,7 @@ type KennethProject = {
     title: string;
     subtitle: string;
     description: string;
-    image: string;
+    image: number;
     link: string;
 }
 
@@ -12,36 +12,36 @@ type KennethSkill = {
 
 export const projects: KennethProject[] = [
     {
-        title: "React Reserve",
-        subtitle: "MERN Stack",
+        title: "MSM Property Manager",
+        subtitle: ".NET Stack",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-        image: "./project2.jpg",
+            "A React and .NET full-stack web application for Managing Properties",
+        image: 1,
+        link: "https://github.com/kennethcole5/CMPS285",
+    },
+    {
+        title: "React Pokedex",
+        subtitle: "Pure React",
+        description:
+            "A React Pokedex built with an API",
+        image: 1,
+        link: "https://github.com/kennethcole5/Pokedex-React-App",
+    },
+    {
+        title: "CMPS 375",
+        subtitle: "OpenCV and Python",
+        description:
+            "Detects Teacher's Face and alerts students.",
+        image: 1,
         link: "",
     },
     {
-        title: "React Tracks",
-        subtitle: "React and Python",
+        title: "CMPS 411",
+        subtitle: "OpenCV and Python",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-        image: "./project-1.jpg",
-        link: "",
-    },
-    {
-        title: "DevChat",
-        subtitle: "React and Firebase",
-        description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-        image: "./project-1.jpg",
-        link: "",
-    },
-    {
-        title: "Epic Todo App",
-        subtitle: "React Hooks",
-        description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-        image: "./project-1.jpg",
-        link: "",
+            "Detect's Student's Face.",
+        image: 1,
+        link: "https://github.com/heidiWesty/ala-kazim",
     },
 ];
 
@@ -53,15 +53,15 @@ export const skills: KennethSkill[] = [
         name: "React"
     },
     {
-        name: "Next.js"
+        name: ".NET"
     },
     {
-        name: "Node"
+        name: "Python"
     },
     {
-        name: "GraphQL"
+        name: "Networking"
     },
     {
-        name: "Material UI"
+        name: "OpenCV"
     },
 ];
