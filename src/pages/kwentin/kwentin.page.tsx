@@ -32,11 +32,64 @@ import verapro from "../../files/photos/kwentin/verapro.png";
 import homeDepot from "../../files/photos/kwentin/homeDepot.png";
 import southeastern from "../../files/photos/kwentin/southeastern.jpg";
 import nodeHardware from "../../files/photos/kwentin/nodeHardware.jpg";
+import IT from "../../files/photos/kwentin/IT.png";
+import java from "../../files/photos/kwentin/java.png";
+import cLang from "../../files/photos/kwentin/cLang.png";
+import bashIcon from "../../files/photos/kwentin/bashIcon.png";
 import { ClassNames } from "@emotion/react";
 
 export const KwentinsPage: FC = () => {
   const classes = useStyles();
-  const cards = [1, 2, 3, 4];
+  interface Cards {
+    cardPhoto: string;
+    cardText: string;
+  }
+
+  let cards: Cards[] = [
+    {
+      cardPhoto: LIGOlogo,
+      cardText: "General Computing Intern",
+    },
+    {
+      cardPhoto: geekSquad,
+      cardText: "OS Consulting Agent",
+    },
+    {
+      cardPhoto: verapro,
+      cardText: "Repair Technician",
+    },
+    {
+      cardPhoto: homeDepot,
+      cardText: "Hardware & Lot Associate",
+    },
+  ];
+
+  let cards2: Cards[] = [
+    {
+      cardPhoto: southeastern,
+      cardText: "Computer Science",
+    },
+    {
+      cardPhoto: IT,
+      cardText: "IT Fundamentals",
+    },
+  ];
+
+  let cards3: Cards[] = [
+    {
+      cardPhoto: java,
+      cardText: "Java",
+    },
+    {
+      cardPhoto: cLang,
+      cardText: "C",
+    },
+    {
+      cardPhoto: bashIcon,
+      cardText: "Bash",
+    },
+  ];
+
   return (
     /* Main Page */
     <div className="kwentins-page">
@@ -61,16 +114,16 @@ export const KwentinsPage: FC = () => {
             {/* Card in the right section under the heading */}
             <Container className={classes.cardGrid} maxWidth="sm">
               <Grid container spacing={1}>
-                {cards.map(() => (
+                {cards.map((card, index) => (
                   <Grid item xs={12} sm={6} md={4}>
                     <Card className={classes.card}>
                       <CardMedia
                         className={classes.cardMedia}
-                        image={LIGOlogo}
+                        image={card.cardPhoto}
                       />
                       <CardContent className={classes.cardContent}>
                         <Typography gutterBottom variant="h6">
-                          General Computing Intern
+                          {card.cardText}
                         </Typography>
                       </CardContent>
                     </Card>
@@ -85,10 +138,29 @@ export const KwentinsPage: FC = () => {
                 color="textPrimary"
                 gutterBottom
               >
-                Education
+                Education & Certifications
               </Typography>
               <hr />
               <Grid container spacing={2} justify="center"></Grid>
+            </Container>
+            <Container className={classes.cardGrid} maxWidth="sm">
+              <Grid container spacing={1}>
+                {cards2.map((card, index) => (
+                  <Grid item xs={12} sm={6} md={4}>
+                    <Card className={classes.card}>
+                      <CardMedia
+                        className={classes.cardMedia}
+                        image={card.cardPhoto}
+                      />
+                      <CardContent className={classes.cardContent}>
+                        <Typography gutterBottom variant="h6">
+                          {card.cardText}
+                        </Typography>
+                      </CardContent>
+                    </Card>
+                  </Grid>
+                ))}
+              </Grid>
             </Container>
             <Container maxWidth="sm" style={{ marginTop: "15px" }}>
               <Typography
@@ -102,42 +174,27 @@ export const KwentinsPage: FC = () => {
               <hr />
               <Grid container spacing={2} justify="center"></Grid>
             </Container>
-            <Container maxWidth="sm" style={{ marginTop: "15px" }}>
-              <Typography
-                variant="h6"
-                align="center"
-                color="textPrimary"
-                gutterBottom
-              >
-                Certifications
-              </Typography>
-              <hr />
-              <Grid container spacing={2} justify="center"></Grid>
-            </Container>
-            <Container maxWidth="sm" style={{ marginTop: "15px" }}>
-              <Typography
-                variant="h6"
-                align="center"
-                color="textPrimary"
-                gutterBottom
-              >
-                Skills
-              </Typography>
-              <hr />
-              <Grid container spacing={2} justify="center"></Grid>
+            <Container className={classes.cardGrid} maxWidth="sm">
+              <Grid container spacing={1}>
+                {cards3.map((card, index) => (
+                  <Grid item xs={12} sm={6} md={4}>
+                    <Card className={classes.card}>
+                      <CardMedia
+                        className={classes.cardMedia}
+                        image={card.cardPhoto}
+                      />
+                      <CardContent className={classes.cardContent}>
+                        <Typography gutterBottom variant="h6">
+                          {card.cardText}
+                        </Typography>
+                      </CardContent>
+                    </Card>
+                  </Grid>
+                ))}
+              </Grid>
             </Container>
           </div>
         </>
-
-        {/* <Image src={LIGOlogo} className="kwentins-scroll-img" />
-        <br />
-        <Image src={geekSquad} className="kwentins-scroll-img" />
-        <br />
-        <Image src={verapro} className="kwentins-scroll-img" />
-        <br />
-        <Image src={homeDepot} className="kwentins-scroll-img" />
-        <br />
-        <Image src={southeastern} className="kwentins-scroll-img" /> */}
       </div>
 
       {/* Left Section */}
@@ -150,18 +207,37 @@ export const KwentinsPage: FC = () => {
             Southeastern Louisiana University. I am currently a junior awaiting
             to graduate in Spring 2023.
           </p>
-          <p>{/* <Image src={nodeHardware} /> */}</p>
           <p className="kwen-text2">
+            Over the years I have been able to work on personal and educational
+            projects. As well as being able to devote myself in my accredited
+            studies. I want to pursue a career working for myself using the
+            knowledge I gain from working in the industry.
+          </p>
+          <p className="kwen-text2">
+            <Image src={nodeHardware} className="kwen-project-img" />
+          </p>
+          <p className="kwen-text3">
+            Pictured above is the most recent semester project I completed with
+            my peers. It is the hardware aspect of an automated watering system
+            for a herb garden. It is a system of sensors that reads enviromental
+            conditions that sets off sprinklers when said conditions are not
+            met.
+          </p>
+          <p className="kwen-text3">
             I created this webpage to depict my academic and career
             achievements. This section details a small biography while the
-            section to the right displays my resume. Below this section are
-            links to my socials.
+            section to the right displays my resume. To the left of the section
+            are the links to my socials.
           </p>
         </div>
         <div className="kwentins-bottom-left">
           <span title="GitHub">
             <a href="https://github.com/Kwentin-Ransom" target="_blank">
-              <GitHubIcon color="primary" fontSize="large" />
+              <GitHubIcon
+                color="primary"
+                fontSize="large"
+                className="kwen-logo1"
+              />
             </a>
           </span>
 
@@ -170,15 +246,14 @@ export const KwentinsPage: FC = () => {
               href="https://www.linkedin.com/in/kwentin-ransom-b07b931a9/"
               target="_blank"
             >
-              <LinkedIn className="kwen-logo" fontSize="large" />
+              <LinkedIn className="kwen-logo2" fontSize="large" />
             </a>
           </span>
-
           <span title="Instagram">
             <a href="https://www.instagram.com/qnkphotos/" target="_blank">
               <Instagram
                 color="secondary"
-                className="kwen-logo"
+                className="kwen-logo2"
                 fontSize="large"
               />
             </a>
